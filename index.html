@@ -5,17 +5,17 @@ layout: default
   <div>
     <p class="eyebrow">Personal blog · {{ 'now' | date: '%Y' }}</p>
     <h1 id="hero-title">你好，我是<br>{{ site.title | split: '·' | first }}。</h1>
-    <p class="hero-copy">我在这里记录正在学习的东西、做过的小项目，以及一些不想忘记的想法。</p>
+    <p class="hero-copy">这里记录我正在学习的东西、做过的小项目，以及一些不想忘记的想法。文章用 Markdown 写成，由 GitHub Actions 编译成静态页面。</p>
     <div class="hero-actions">
       <a class="button primary" href="#writing">读读我的文章</a>
-      <a class="button secondary" href="mailto:hello@example.com">给我发邮件</a>
+      <a class="button secondary" href="mailto:3196593369@qq.com">给我发邮件</a>
     </div>
   </div>
-  <div class="hero-card" aria-label="个人头像占位图"><div class="avatar">YN</div></div>
+  <div class="hero-card" aria-label="个人头像"><div class="avatar">ZIYU</div></div>
 </section>
 
 <section id="writing" class="wrap section" aria-labelledby="writing-title">
-  <div class="section-heading"><div><p class="eyebrow">Latest notes</p><h2 id="writing-title">最近写了什么</h2><div class="rule"></div></div><p>以后只需要在 `_posts` 文件夹中新增 Markdown 文件。</p></div>
+  <div class="section-heading"><div><p class="eyebrow">Latest notes</p><h2 id="writing-title">最近写了什么</h2><div class="rule"></div></div><p>按时间倒序排列，最新的一篇在最前面。</p></div>
   <div class="article-grid">
     {% for post in site.posts limit: 6 %}
     <article class="card">
@@ -29,10 +29,10 @@ layout: default
 </section>
 
 <section id="projects" class="wrap section" aria-labelledby="projects-title">
-  <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="projects-title">做过的小项目</h2><div class="rule"></div></div><p>项目内容仍然直接写在这个页面里，适合首节先改文字和链接。</p></div>
+  <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="projects-title">做过的小项目</h2><div class="rule"></div></div><p>一些练手的页面，和正在做的事。</p></div>
   <div class="project-grid">
-    <article class="card"><div class="card-meta">PROJECT 01</div><h3>校园活动页面</h3><p>为一次活动制作的静态介绍页，练习了布局和信息层级。</p><a class="card-link" href="#">查看项目 →</a></article>
-    <article class="card"><div class="card-meta">PROJECT 02</div><h3>我的学习清单</h3><p>一个帮助自己整理课程、目标和阅读记录的小工具。</p><a class="card-link" href="#">查看项目 →</a></article>
-    <article class="card"><div class="card-meta">PROJECT 03</div><h3>正在进行中</h3><p>这里可以放一个还没完成、但值得继续记录的想法。</p><a class="card-link" href="#">了解更多 →</a></article>
+    <article class="card"><div class="card-meta">PROJECT 01</div><h3>这个个人博客</h3><p>用 Jekyll 和 GitHub Pages 搭起来的静态博客，纯 HTML 与 CSS，没有构建工具和外部依赖。</p><a class="card-link" href="https://github.com/ZIYU-xbly/my-blog">查看项目 →</a></article>
+    <article class="card"><div class="card-meta">PROJECT 02</div><h3>静态页面练习</h3><p>练习 HTML 结构和 CSS 布局的小页面，包括响应式排版与配色调整。</p><a class="card-link" href="https://github.com/ZIYU-xbly">查看项目 →</a></article>
+    <article class="card"><div class="card-meta">PROJECT 03</div><h3>学习笔记</h3><p>把课程和读书笔记整理成 Markdown，方便以后回看和检索。</p><a class="card-link" href="https://github.com/ZIYU-xbly">了解更多 →</a></article>
   </div>
 </section>

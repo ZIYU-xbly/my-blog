@@ -1,7 +1,9 @@
-title: 你的名字 · 个人博客
-description: 一个可以持续写作的个人博客
+title: ZIYU-xbly · 个人博客
+description: 记录学习过程、做过的项目和一些不想忘记的想法。
+url: "https://ZIYU-xbly.github.io"
+baseurl: "/my-blog"
 lang: zh-CN
-timezone: Asia/Singapore
+timezone: Asia/Shanghai
 markdown: kramdown
 permalink: /posts/:title/
 exclude:
