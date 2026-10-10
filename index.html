@@ -4,7 +4,7 @@ layout: default
 <section id="top" class="wrap hero" aria-labelledby="hero-title">
   <div>
     <p class="eyebrow">Personal blog · {{ 'now' | date: '%Y' }}</p>
-    <h1 id="hero-title">你好，我是<br>{{ site.title | split: '·' | first }}。</h1>
+    <h1 id="hero-title">你好，我是<br>{{ site.title | split: '·' | first | strip }}。</h1>
     <p class="hero-copy">这里记录我正在学习的东西、做过的小项目，以及一些不想忘记的想法。文章用 Markdown 写成，由 GitHub Actions 编译成静态页面。</p>
     <div class="hero-actions">
       <a class="button primary" href="#writing">读读我的文章</a>
